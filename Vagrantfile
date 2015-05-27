@@ -13,7 +13,7 @@ Vagrant.configure(2) do |config|
 	config.vm.network "private_network", ip: ipAddr
 
 	# change path
-	config.vm.synced_folder "C:/Users/TAAHESA6/GRV2", "/home/graviton"
+	config.vm.synced_folder "C:/...", "/home/graviton"
 
 	config.vm.provision "shell", path: "init-provisioner.sh", args: phpVersion
 	config.vm.provision "shell", inline: "cd /home/graviton/ && php app/console server:status 192.168.50.2:8080 > serverStatus
