@@ -27,17 +27,3 @@ Vagrant.configure(2) do |config|
 	fi
 	rm serverStatus", run: "always", privileged: false
 	end
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
